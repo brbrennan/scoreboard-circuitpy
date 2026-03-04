@@ -48,20 +48,30 @@ COLLEGE = {"ncaaf", "ncaab", "ncaah"}
 
 # ============================================================
 # Power 4 + Notre Dame (football) — 2024-25 memberships
+#
+# Abbreviations verified against actual ESPN API responses
+# (cross-checked against downloaded logo filenames).
+# Fixes from golden baseline:
+#   NCST  -> NCSU  (NC State)
+#   MIZZ  -> MIZ   (Missouri)
+#   NW    -> NU    (Northwestern)
+#   OKLA  -> OU    (Oklahoma)
+#   TAMU  -> TA&M  (Texas A&M — ESPN uses ampersand)
+#   RUT   -> RUTG  (Rutgers)
 # ============================================================
 POWER4_FOOTBALL = {
     # ACC
-    "BC", "CLEM", "DUKE", "FSU", "GT", "LOU", "MIA", "UNC", "NCST", "PITT",
+    "BC", "CLEM", "DUKE", "FSU", "GT", "LOU", "MIA", "UNC", "NCSU", "PITT",
     "SYR", "UVA", "VT", "WAKE", "CAL", "STAN", "SMU",
     # Big 12
     "BAY", "BYU", "CIN", "COL", "HOU", "ISU", "KU", "KSU",
     "OKST", "TCU", "TTU", "UCF", "WVU", "ARIZ", "ASU", "UTAH",
     # Big Ten
     "ILL", "IND", "IOWA", "MD", "MICH", "MSU", "MINN", "NEB",
-    "NW", "OSU", "PUR", "PSU", "RUT", "WIS", "UCLA", "USC", "ORE", "WASH",
+    "NU", "OSU", "PUR", "PSU", "RUTG", "WIS", "UCLA", "USC", "ORE", "WASH",
     # SEC
     "ALA", "ARK", "AUB", "FLA", "UGA", "UK", "LSU", "MISS",
-    "MSST", "MIZZ", "SC", "TENN", "TAMU", "VAN", "OKLA", "TEX",
+    "MSST", "MIZ", "SC", "TENN", "TA&M", "VAN", "OU", "TEX",
     # Independent
     "ND",
 }
@@ -70,7 +80,7 @@ POWER4_FOOTBALL = {
 POWER_BASKETBALL = POWER4_FOOTBALL | {
     # Big East (basketball conference, no football)
     "BUT", "CREI", "DEP", "GTWN", "MARQ", "CONN",
-    "NOVA", "HALL", "XAV", "SJU", "PROV",
+    "VILL", "HALL", "XAV", "SJU", "PROV",
 }
 
 
